@@ -1,0 +1,132 @@
+/*styling for the whole body*/
+/*Color palette:
+all links: rgba(166, 58, 12, 0.79);rgb(196,17,87) rgb(240, 130, 95)
+hover: rgb(3,25,30);
+*/
+
+
+
+*{
+  padding: 0px; margin: 0px; box-sizing: border-box; text-decoration: none;
+}
+
+/*font styling refernce*/
+h1 {font-family: 'Muli', sans-serif; font-size: 38px; font-weight: 700; line-height: 50px;}
+h2 {font-family: 'Source Sans Pro', sans-serif; font-size: 23px; font-weight: 900; line-height: 38px;}
+h3 {font-family: 'Source Sans Pro', sans-serif; font-size: 22px; font-weight: 300; line-height: 30px;}
+h4 {font-family: 'Source Sans Pro', sans-serif; font-size: 22px; font-weight: 700; line-height: 30px;}
+h5 { font-family: 'Source Sans Pro', sans-serif; font-size: 20px; font-weight: 300;line-height: 26px;}
+h6 { font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 300;line-height: 26px;}
+p{ font-family: 'Muli', sans-serif; font-size: 17px; font-weight: 400; line-height: 28px;}
+blockquote { font-family: 'Source Sans Pro', sans-serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
+pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
+
+
+html, body{
+  font-family: 'Muli', sans-serif;
+  color: rgb(0,0,0);
+}
+
+/*skip to content css*/
+.skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+a.skip:active,
+a.skip:focus,
+a.skip:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+/*styling for the header*/
+header{
+  padding:10px 0px 20px 0px;
+  display: block;
+  text-align: left;
+}
+
+/* nav bar */
+
+nav{
+  display: block;
+  text-decoration: none;
+  position: relative;
+  text-align: left;
+}
+
+.logo{
+  transition: 1s;
+  display:inline-block;
+  width:26%;
+}
+
+
+/*nav bar*/
+
+nav ul li{
+  display:none;
+  margin:0% 4%;
+  text-align: center;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+/*here it styles the current tab*/
+.current-nav-tab a{
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+}
+
+/*here are the rest navs*/
+.other-nav-tab > a{
+  font-weight: 300;
+  text-decoration: none;
+  transition:  0.3s ease-in;
+  text-align: center;
+}
+
+.other-nav-tab > a:hover{
+  color: #505050;
+}
+
+/*nav icon*/
+.nav-icon{
+  text-decoration: none;
+  font-size: 28px;
+  display: block;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+
+.topnav .topnav-expand .nav-icon{
+  display: block;
+}
+
+.topnav-expand > ul > li{
+  display: block;
+  line-height: 40px;
+  float: none;
+  text-align: center;
+}
+
+.topnav-expand .current-nav-tab{
+  color: #505050;
+}
+.topnav-expand .other-nav-tab:active{
+  font-weight: 400;
+}
+
+/* Media queries */

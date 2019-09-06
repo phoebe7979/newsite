@@ -1,13 +1,12 @@
 /*Top navigation toggle menu*/
 function navIconClick() {
-    var x = document.getElementById("nav-tabs");
+    var x = document.getElementById("nav-bar");
     if (x.className === "topnav") {
         x.className += " topnav-expand";
     } else {
         x.className = "topnav";
     }
 }
-
 
 
 
@@ -28,5 +27,5 @@ $(document).ready(function(){
           $(this).removeAttr('tabindex');
       }).focus(); // focus on the content container
   });
-  
+
 });

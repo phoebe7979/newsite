@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="imgs/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="imgs/favicon-32x32-1.png" sizes="32x32" />
+  <!--css -->
+
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Yi-Chun Chen</title>
+  <link rel="stylesheet" type = "text/css" href="lightbox/dist/css/lightbox.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<a href="#content" class="skip">Skip to content</a>
+
+
+<div class = "progress">
+  <div class = "progress-bar" id="bar"></div>
+</div>
+<header>
+  <nav class="topnav" id="nav-bar">
+    <a href="index.html"><img class="logo" src="imgs/logo16.svg" alt="logo image" title="yi-chun chen"></a>
+    <a href = "javascript:void(0);" class = "nav-icon" onclick="navIconClick()" aria-label="menu"><i class="material-icons">&#xe5d2;</i></a>
+    <ul id = "nav-items" class = "nav-tabs">
+        <li class="other-nav-tab tab-item"><a href="index.html"><p>Work</p></a></li>
+        <li class="current-nav-tab tab-item"><a href="about.html"><p>About</p></a></li>
+    </ul>
+  </nav>
+
+</header>
+
+
+<!-- main content -->
+<main id = 'content'>
+<!--about me -->
+
+  <div class ="flex-container bg-light-grey">
+    <div class = "flex-box section-description-left">
+      <div class = "flex-box-text">
+        <p> <span class = "title">About me.</span>
+         I am a second year master's student at the School of Information at Univerity of Michigan, fosucing on Human-Computer Interaction.<br><br>
+         Coming from a non-traditional background, my previous work pexperience include research assistant in cognitive linguistics, second language teacher, and marketing specialist.<br><br>
+         I have always been interested in different types of interaction, be it interpersonal, brand-consumer, or human-computer. As a rising UX professional, I feel rewarded everyday working on different projects that shape the future of technology and our lives.<br><br>
+        </p>
+      </div>
+    </div>
+    <div class = "flex-box section-description-right">
+      <img id = "self" src = "imgs/about/self.png" alt = "photo"/>
+    </div>
+    <div class = "flex-box project-box-left">
+      <div class = "flex-box-text">
+        <h5>What I am up to these days</h5>
+        <h6>Working as a part-time UX designer for a startup</h6>
+        <h6>Participating in a health fostering product design project</h6>
+        <h6>Learning React.js</h6>
+        <h6>Learning about AR/VR</h6>
+        <h6>Reading a lot about politics, and watched the movie VICE</h6>
+        <h6>Preparing myself mentally for the Michigan winter...</h6>
+      </div>
+    </div>
+    <div class = "flex-box project-box-right">
+      <div class = "flex-box-text">
+        <h5>UX skills</h5>
+        <h6>Generative research</h6>
+        <h6>Visual design</h6>
+        <h6>Interaction design</h6>
+        <h6>Evaluative research</h6>
+        <h6>Front-end programming</h6>
+        <h6>Agile methogologies</h6>
+      </div>
+    </div>
+    <div class = "flex-box project-box-left ">
+      <div class = "flex-box-text">
+        <h5>Tools</h5>
+        <h6>Adobe Creative Cloud</h6>
+        <h6>Azure RP</h6>
+        <h6>Figma</h6>
+        <h6>InVision</h6>
+        <h6>Sketch</h6>
+        <h6>Tableau</h6>
+      </div>
+    </div>
+    <div class = "flex-box project-box-right">
+      <div class = "flex-box-text">
+        <h5>Others</h5>
+        <h6>Agile methonoglogies</h6>
+        <h6>HTML/CSS</h6>
+        <h6>Django</h6>
+        <h6>Flask</h6>
+        <h6>JavaScript</h6>
+        <h6>Python</h6>
+      </div>
+    </div>
+  </div>
+
+<!--about this website -->
+  <div class ="flex-container flex-row-reverse bg-light-grey">
+    <div class = "flex-box section-description-right">
+      <div class = "flex-box-text">
+        <p> <span class = "title">About this site.</span>
+         The portfolio website has been a ongoing side project for me, because I actually enjoy building my own site!<br><br>
+         The site is written in HTML, CSS, and some JavaScript, with a lot of help from W3Schools and Stack Overflow. My tools include Atom and Github.<br><br>
+         Recently, it has gone through a revamp process starting from September, 2019, for which I have added some cool JS effects such as the scroll progress bar, as well as more content, to make it feel more like me (check out the difference on the left).<br><br>
+         Please feel free to <a href = "mailto:yichuncc@umich.edu">email me</a> if you spot any bugs or have any suggestions! And of course, this website will keep evolving.<br><br>
+        </p>
+      </div>
+    </div>
+    <div class = "flex-box section-description-left">
+      <img id = "site" src = "imgs/about/website.png" alt = "website changes"/>
+    </div>
+
+
+</main>
+
+
+<!--footer area-->
+<footer class = "flex-container align-center bg-grey-red text-darkgrey">
+  <p class = "middle">designed and coded by Yi-Chun Chen @ 2019</p>
+</footer>
+
+<script src="scripts/main.js"></script>
+<script src="lightbox/dist/js/lightbox.min.js"></script>
+</body>
+
+</html>

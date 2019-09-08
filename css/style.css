@@ -17,10 +17,10 @@ h2 {font-family: 'Muli', sans-serif; font-size: 23px; font-weight: 900; line-hei
 h3 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 300; line-height: 30px;}
 h4 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 700; line-height: 30px;}
 h5 { font-family: 'Merriweather Sans', sans-serif; font-size: 18px; font-weight: 700;line-height: 30px;}
-h6 { font-family: 'Merriweather Sans', sans-serif; font-size: 15px; font-weight: 300;line-height: 26px;}
+h6 { font-family: 'Merriweather Sans', sans-serif; font-size: 14px; font-weight: 300;line-height: 26px;}
 p{ font-family: 'Merriweather Sans', sans-serif; font-size: 16px; font-weight: 300; line-height: 28px;}
 blockquote { font-family: 'Merriweather', serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
-pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Lato', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
+pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Merriweather Sans', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
 b {font-weight: 400;}
 
 
@@ -32,7 +32,10 @@ html, body{
 }
 
 p a {
-
+  font-weight: 400;
+  border-bottom: 5px solid #A1A8D8;
+  margin-bottom: -5px;
+  color: #A1A8D8;
 }
 
 /*skip to content css*/
@@ -58,23 +61,38 @@ a.skip:hover {
 
 /*add padding for all mobile sections, side padding: 0px 16px*/
 
-body{
-
-}
 
 
 /* nav bar */
 
+
+.progress{
+  background-color: #ffa8a9;
+  height:5px;
+  width:100%;
+  position: fixed;
+  z-index:999;
+  top:0px;
+}
+
+.progress-bar{
+  background-color: rgba(162,85,187,0.6);
+  height:5px;
+  width:0px;
+
+}
+
 header{
-  border-top: 10px solid #FFA8A9;
+  /*border-top: 10px solid #FFA8A9;*/
   position:fixed;
-  top:0;
+  top:5px;
   padding: 0px 16px;
   width:100%;
   background-color: white;
-  /*box-shadow: 0px 0px 20px #D5D5D5 ;*/
-  z-index: 1000;
+  box-shadow: 0px 0px 10px #D5D5D5;
+  z-index: 999;
 }
+
 
 .topnav{
   padding:10px 0px 10px 0px;
@@ -152,6 +170,8 @@ nav ul li{
 
 main{
   display: block;
+  max-width: 1500px;
+  margin: auto;
   margin-top: 77px;
 }
 
@@ -165,9 +185,13 @@ main{
 
 .flex-box{
   max-width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
   text-align: left;
+  display:block;
+}
+
+.flex-box img{
+  max-width: 100%;
 }
 
 #welcome{
@@ -218,7 +242,7 @@ main{
   display:flex;
   align-items: center;
   width:70%;
-  min-width: 350px;
+  min-width:350px;
 }
 
 
@@ -234,21 +258,24 @@ main{
 .project-box-img{
   display: block;
   position:relative;
+  text-align: center;
 }
 
 .project-box-img > img{
   max-width: 100%;
-  box-shadow: 10px -10px 10px rgba(161,168,216,0.3);
+  box-shadow: 5px -5px 10px rgba(161,168,216,0.2);
 }
 
 .project-box-title{
-  margin: 10px 0px;
+  margin: 10px auto;
   color: black;
+  width: 350px;
 }
 
 .project-box-overlay{
   display:block;
   position: absolute;
+  margin:auto;
   bottom: 0;
   left: 0;
   right: 0;
@@ -273,6 +300,21 @@ main{
 .project-box-img:hover .project-box-overlay{
   height: 100%;
   padding-right: 10px;
+}
+
+
+/*about page*/
+
+#self{
+
+  box-shadow: 10px 10px #FF7F72;
+  margin: auto;
+}
+
+#site{
+  max-width: 500px;
+  width:100%;
+
 }
 
 /* Media queries -- tablet, side-padding: 0 5%*/
@@ -329,7 +371,10 @@ main{
     width: 49%;
     max-width: 49%;
     text-align: left;
+    margin: 20px 0px;
   }
+
+
 
   #welcome{
     padding: 0;
@@ -376,18 +421,33 @@ main{
 
   .section-description-right{
     padding-left: 2%;
+    width:49%;
   }
 
   .section-description-left{
     padding-right: 2%;
+    width:49%;
+  }
+
+  .subtitle{
+    width:350px;
+    margin:auto;
   }
 
   .project-box-left{
     padding-right:2%;
+    width:49%;
+
   }
 
   .project-box-right{
     padding-left:2%;
+    width:49%;
+
+  }
+
+  .flex-box-text{
+    margin:auto;
   }
 
 }
@@ -471,6 +531,11 @@ main{
   background-color: #FFF2FD;
 }
 
+.bg-lightcoral{
+  background-color: #FFF3F3;
+}
+
+
 .bg-blue-tint{
   background-color: rgba(244,246,255);
 }
@@ -479,6 +544,15 @@ main{
 .bg-pink-tint{
   background-color: rgba(255,244,255);
 }
+
+.bg-coral-tint{
+  background-color: #FFF1F0;
+}
+
+.bg-redcoral{
+  background-color: #FF7F72;
+}
+
 
 
 /*text color*/
@@ -525,6 +599,10 @@ main{
 
 .padding-left{
   padding-left:2%;
+}
+
+.padding-around{
+  padding: 10px;
 }
 
 

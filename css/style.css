@@ -76,7 +76,7 @@ a.skip:hover {
 }
 
 .progress-bar{
-  background-color: rgba(162,85,187,0.6);
+  background-color: rgba(162,85,187,0.9);
   height:5px;
   width:0px;
 
@@ -252,7 +252,7 @@ main{
 }
 
 .title{
-  font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 700; line-height: 40px;
+  font-family: 'Merriweather Sans', sans-serif; font-size: 28px; font-weight: 900; line-height: 40px;
   display:block;
   margin-bottom: 10px;
   color:#000000;
@@ -416,7 +416,7 @@ main{
   }
 
   .flex-container{
-    padding: 100px 5%;
+    padding: 60px 5%;
     justify-content: space-between;
   }
 
@@ -561,7 +561,7 @@ main{
 
   }
   .flex-container{
-    padding: 100px 12%;
+    padding: 70px 12%;
   }
 
   .flex-box{
@@ -588,7 +588,7 @@ main{
   }
 
   .flex-container{
-    padding: 100px 20%;
+    padding: 80px 20%;
   }
 
   .flex-container-short{

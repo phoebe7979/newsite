@@ -12,15 +12,15 @@ blue-grey: rgb(217,227,228)
 }
 
 /*font styling refernce*/
-h1 {font-family: 'Muli', sans-serif; font-size: 28px; font-weight: 900; line-height: 40px;}
-h2 {font-family: 'Muli', sans-serif; font-size: 23px; font-weight: 900; line-height: 38px;}
-h3 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 300; line-height: 30px;}
-h4 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 700; line-height: 30px;}
-h5 { font-family: 'Merriweather Sans', sans-serif; font-size: 18px; font-weight: 700;line-height: 30px;}
+h1 {font-family: 'Merriweather Sans', sans-serif; font-size: 28px; font-weight: 900; line-height: 40px;}
+h2 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 700; line-height: 40px;}
+h3 {font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 300; line-height: 40px;}
+h4 {font-family: 'Merriweather Sans', sans-serif; font-size: 20px; font-weight: 300; line-height: 36px;}
+h5 { font-family: 'Merriweather Sans', sans-serif; font-size: 17px; font-weight: 700;line-height: 30px;}
 h6 { font-family: 'Merriweather Sans', sans-serif; font-size: 14px; font-weight: 300;line-height: 26px;}
 p{ font-family: 'Merriweather Sans', sans-serif; font-size: 16px; font-weight: 300; line-height: 28px;}
 blockquote { font-family: 'Merriweather', serif; font-size: 22px; font-weight: 300; padding: 40px 0px; text-align: center; color: white; line-height: 50px; background-color: rgb(180,180,180);}
-pre { display: inline-block; padding: 3px; margin: 2px 5px 5px 0px; font-family: 'Merriweather Sans', sans-serif; font-size: 11px; font-weight: 400; border: solid rgb(170,170,170) 1px; border-radius: 3px;}
+.pre { font-family: 'Merriweather Sans', sans-serif; font-size: 12px; font-weight: 300; color:#A89CC6;}
 b {font-weight: 400;}
 
 
@@ -132,22 +132,21 @@ nav ul li{
 }
 
 /*here it styles the current tab*/
-.current-nav-tab a p{
+.current-nav-tab a h6{
   text-decoration: none;
   color: rgb(180,44,115);
   border-bottom: 2px solid rgb(180,44,115);
 }
 
 /*here are the rest navs*/
-.other-nav-tab a p{
+.other-nav-tab a h6{
   text-decoration: none;
   transition:  0.3s ease-in;
   color: black;
-  padding:2px;
-  /*border-bottom: 2px solid white;*/
+  border-bottom: 2px solid white;
 }
 
-.other-nav-tab > a p:hover{
+.other-nav-tab > a h6:hover{
   color: rgb(180,44,115);
   border-bottom: 2px solid rgb(180,44,115);
 }
@@ -177,7 +176,15 @@ main{
 
 .flex-container{
   display:flex;
-  padding: 10px 16px 20px 16px;
+  padding: 40px 16px 40px 16px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container-short{
+  display:flex;
+  padding: 40px 16px 40px 16px;
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
@@ -196,7 +203,7 @@ main{
 
 .flex-box{
   max-width: 100%;
-  margin: 20px;
+  margin: 30px;
   text-align: left;
   display:block;
 }
@@ -205,9 +212,17 @@ main{
   max-width: 100%;
 }
 
+.flex-col-4{
+  width:70%;
+  margin:20px;
+  text-align:left;
+  display:block;
+}
+
 .full-flex-title{
   text-align: center;
 }
+
 
 #welcome{
   max-width: 100%;
@@ -232,12 +247,12 @@ main{
 .roundtext{
   padding: 20px 20px;
   text-align: left;
-  width: 70%;
+  width: 80%;
   color: #401F94;
 }
 
 .title{
-  font-family: 'Merriweather Sans', sans-serif; font-size: 28px; font-weight: 900; line-height: 40px;
+  font-family: 'Merriweather Sans', sans-serif; font-size: 22px; font-weight: 700; line-height: 40px;
   display:block;
   margin-bottom: 10px;
   color:#000000;
@@ -317,6 +332,16 @@ main{
   padding-right: 10px;
 }
 
+.project-box-left{
+  width:100%;
+
+}
+.project-box-right{
+  width:100%;
+
+
+
+}
 
 /*about page*/
 
@@ -332,8 +357,21 @@ main{
 
 }
 
+/*project page*/
+
+.project-banner{
+  width: 300px;
+}
+
+.full-section-text{
+  display:block;
+  margin:20px;
+  width:70%;
+  max-width:690px;
+}
+
 /* Media queries -- tablet, side-padding: 0 5%*/
-@media only screen and (min-width : 768px)
+@media only screen and (min-width : 800px)
 {
   body{
 
@@ -360,7 +398,7 @@ main{
     text-align: right;
     width: 30%;
     right: 0%;
-    top:20px;
+    top:28px;
     z-index:101;
   }
 
@@ -378,7 +416,12 @@ main{
   }
 
   .flex-container{
-    padding: 0 5%;
+    padding: 100px 5%;
+    justify-content: space-between;
+  }
+
+  .flex-container-short{
+    padding: 10px 5%;
     justify-content: space-between;
   }
 
@@ -386,7 +429,7 @@ main{
     width: 49%;
     max-width: 49%;
     text-align: left;
-    margin: 20px 0px;
+    margin: 40px 0px;
   }
 
   .flex-column{
@@ -397,16 +440,24 @@ main{
 
   .flex-column a img{
     width: 100%;
+    margin-bottom: 10px
+  }
+
+  .flex-col-4 {
+    width: 29%;
+    text-align: left;
+    margin:20px 0px;
   }
 
   .full-flex-title{
     text-align: left;
     width:100%;
-
+    max-width: 100%;
   }
 
   #welcome{
     padding: 0;
+    max-width: 350px;
   }
 
 
@@ -476,7 +527,18 @@ main{
   }
 
   .flex-box-text{
-    margin:auto;
+    /*margin:auto;*/
+  }
+
+/*project page*/
+  .project-banner{
+    width: 400px;
+  }
+
+  .full-section-text{
+    margin:20px auto;
+    width:690px;
+
   }
 
 }
@@ -499,7 +561,7 @@ main{
 
   }
   .flex-container{
-    padding: 0 12%;
+    padding: 100px 12%;
   }
 
   .flex-box{
@@ -526,7 +588,11 @@ main{
   }
 
   .flex-container{
-    padding: 0 20%;
+    padding: 100px 20%;
+  }
+
+  .flex-container-short{
+    padding: 20px 20%;
   }
 
 
@@ -596,6 +662,10 @@ main{
   text-align: center;
 }
 
+.align-top{
+  display:block;
+}
+
 .middle{
   margin:auto;
 }
@@ -636,4 +706,5 @@ main{
 
 .full-width{
   width:100%;
+  max-width: 100%;
 }

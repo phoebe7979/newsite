@@ -19,7 +19,7 @@ h4 {font-family: 'Merriweather Sans', sans-serif; font-size: 20px; font-weight: 
 h5 { font-family: 'Merriweather Sans', sans-serif; font-size: 17px; font-weight: 700;line-height: 30px;}
 h6 { font-family: 'Merriweather Sans', sans-serif; font-size: 14px; font-weight: 300;line-height: 26px;}
 p{ font-family: 'Merriweather Sans', sans-serif; font-size: 16px; font-weight: 300; line-height: 28px;}
-blockquote { font-family: 'Merriweather Sans', sans-serif; font-size: 16px; font-weight: 300; margin: 20px 0px; border-left: 3pt solid #401F94; padding: 0px 0px 0px 20px; line-height: 40px;}
+blockquote { font-family: 'Muli', sans-serif; font-size: 18px; font-style:italic; font-weight: 300; margin: 30px 0px; border-left: 3pt solid #AB70E7; padding: 0px 0px 0px 20px; line-height: 36px;}
 .pre { font-family: 'Merriweather Sans', sans-serif; font-size: 12px; font-weight: 300; color:#A89CC6;}
 b {font-weight: 400;}
 
@@ -259,7 +259,7 @@ main{
 }
 
 .subtitle{
-  color: #383838;
+  color: #494949;
 }
 
 #name{
@@ -376,6 +376,12 @@ main{
   margin:20px;
   width:70%;
   max-width:690px;
+}
+
+.project-wide-img{
+  display:block;
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* Media queries -- tablet, side-padding: 0 5%*/
@@ -635,6 +641,9 @@ main{
   background-color: #FFF3F3;
 }
 
+.bg-darkbluepurple{
+  background-color: #401F94;
+}
 
 .bg-blue-tint{
   background-color: rgba(244,246,255);
@@ -661,7 +670,7 @@ main{
 }
 
 .text-darkgrey{
-  color:#383838;
+  color:#494949;
 }
 
 
@@ -669,6 +678,7 @@ main{
 .align-center{
   text-align: center;
 }
+
 
 .align-top{
   display:block;

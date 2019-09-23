@@ -46,7 +46,7 @@ h6 a {
 }
 
 
-ul, ol{
+.lists{
   padding: 20px;
   font-family: 'Merriweather Sans', sans-serif; font-size: 16px; font-weight: 300; line-height: 30px;
 }
@@ -571,7 +571,8 @@ main{
 
 /*project page*/
   .project-banner{
-    width: 400px;
+    width: 100%;
+    max-width: 500px;
   }
 
   .full-section-text{
@@ -664,6 +665,10 @@ main{
 
 .bg-lightcoral{
   background-color: #FFF3F3;
+}
+
+.bg-lightbluegreen{
+  background-color: #EBFEFB;
 }
 
 .bg-darkbluepurple{

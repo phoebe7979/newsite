@@ -684,6 +684,9 @@ main{
   .project-box-overlay{
     margin:0px;
   }
+  .project-box-left{
+    text-align: right;
+  }
   .project-box-left .project-box-img-container{
     text-align: right;
   }

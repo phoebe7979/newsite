@@ -333,6 +333,7 @@ main{
   margin:auto;
   bottom: 0;
   left: 0;
+  right:0;
   overflow: hidden;
   padding-left: 10px;
   max-width: 351px;
@@ -675,6 +676,9 @@ main{
   }
   .project-box-right .project-box-title{
     text-align:left;
+  }
+  .project-box-overlay{
+    margin:0px;
   }
   .project-box-left .project-box-img-container{
     text-align: right;

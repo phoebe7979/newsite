@@ -793,6 +793,7 @@ main{
 
 .middle{
   margin:auto;
+  display:block;
 }
 
 .flex-center-align{

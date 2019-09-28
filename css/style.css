@@ -671,6 +671,9 @@ main{
 /* Media queries -- HD screen */
 @media only screen and (min-width : 2000px)
 {
+  .roundbox{
+    width: 40%;
+  }
   .section-description-right{
     padding-left: 5%;
   }

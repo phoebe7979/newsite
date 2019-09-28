@@ -712,7 +712,7 @@ main{
   .section-description-left .subtitle{
     margin-right:0px;
   }
-  .project-box-right .project-box-title{
+  .project-box-left .project-box-title{
     margin: 10px 0px;
   }
 }

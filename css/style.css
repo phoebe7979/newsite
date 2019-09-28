@@ -674,7 +674,7 @@ main{
   .project-box-right .project-box-img-container{
     text-align: left;
   }
-  .project-box-right .subtitle{
+  .section-description-right .subtitle{
     margin-left:0px;
   }
   .project-box-right .project-box-title{
@@ -687,7 +687,7 @@ main{
   .project-box-left .project-box-img-container{
     text-align: right;
   }
-  .project-box-right .subtitle{
+  .section-description-left .subtitle{
     margin-right:0px;
   }
   .project-box-right .project-box-title{

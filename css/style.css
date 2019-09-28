@@ -700,7 +700,7 @@ main{
     text-align:left;
     margin: 10px 0px;
   }
-  .project-box-overlay{
+  .project-box-right .project-box-overlay{
     margin:0px;
   }
   .project-box-left{
@@ -714,6 +714,9 @@ main{
   }
   .project-box-left .project-box-title{
     margin: 10px 0px;
+  }
+  .project-box-left .project-box-overlay{
+    margin-right:0px;
   }
 }
 

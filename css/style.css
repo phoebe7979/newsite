@@ -671,7 +671,12 @@ main{
 /* Media queries -- HD screen */
 @media only screen and (min-width : 2000px)
 {
-
+  .project-box-right .project-box-img-container{
+    text-align: left;
+  }
+  .project-box-left .project-box-img-container{
+    text-align: right;
+  }
 }
 
 

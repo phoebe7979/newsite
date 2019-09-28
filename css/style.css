@@ -603,6 +603,7 @@ main{
   .full-section-text{
     margin:20px auto;
     width:690px;
+    display:block;
 
   }
 
@@ -664,6 +665,12 @@ main{
   .roundbox{
     width: 70%;
   }
+
+}
+
+/* Media queries -- HD screen */
+@media only screen and (min-width : 2000px)
+{
 
 }
 

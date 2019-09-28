@@ -671,6 +671,25 @@ main{
 /* Media queries -- HD screen */
 @media only screen and (min-width : 2000px)
 {
+  .section-description-right{
+    padding-left: 5%;
+  }
+
+  .section-description-left{
+    padding-right: 5%;
+  }
+
+
+  .project-box-left{
+    padding-right:5%;
+  }
+
+  .project-box-right{
+    padding-left:5%;
+  }
+
+
+
   .project-box-right .project-box-img-container{
     text-align: left;
   }

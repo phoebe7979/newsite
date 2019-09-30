@@ -19,7 +19,7 @@ h4 {font-family: 'Merriweather Sans', sans-serif; font-size: 20px; font-weight: 
 h5 { font-family: 'Merriweather Sans', sans-serif; font-size: 17px; font-weight: 700;line-height: 30px;}
 h6 { font-family: 'Merriweather Sans', sans-serif; font-size: 14px; font-weight: 300;line-height: 26px;}
 p{ font-family: 'Merriweather Sans', sans-serif; font-size: 16px; font-weight: 300; line-height: 30px;}
-blockquote { font-family: 'Muli', sans-serif; font-size: 18px; font-style:italic; font-weight: 300; margin: 30px 0px; border-left: 3pt solid #AB70E7; padding: 0px 0px 0px 20px; line-height: 36px;}
+blockquote { font-family: 'Muli', sans-serif; font-size: 18px; font-style:italic; font-weight: 300; margin: 30px 0px; border-left: 5pt solid #AB70E7; padding: 0px 0px 0px 20px; line-height: 36px;}
 .pre { font-family: 'Merriweather Sans', sans-serif; font-size: 12px; font-weight: 300; color:#A89CC6;}
 b {font-weight: 700;}
 
@@ -33,14 +33,14 @@ html, body{
 
 p>a {
   font-weight: 400;
-  border-bottom: 2px solid #A1A8D8;
+  border-bottom: 2px solid #CBADFF;
   margin-bottom: -5px;
   color: #000000;
 }
 
 h6>a {
   font-weight: 400;
-  border-bottom: 2px solid #A1A8D8;
+  border-bottom: 2px solid #CBADFF;
   margin-bottom: -5px;
   color: #000000;
 }
@@ -84,7 +84,7 @@ img{
 
 
 .progress{
-  background-color: #FF7777;
+  background-color: #FFFFFF;
   height:5px;
   width:100%;
   position: fixed;
@@ -94,9 +94,9 @@ img{
 
 .progress-bar{
   background: #E7E1FB;
+  background: #CBADFF;
   height:5px;
   width:0px;
-
 }
 
 header{
@@ -107,7 +107,8 @@ header{
   width:100%;
   background-color: white;
   box-shadow: 0px 0px 10px #D5D5D5;
-  z-index: 999;
+  z-index: 998;
+  transition: top 0.3s;
 }
 
 
@@ -118,6 +119,7 @@ header{
   position: relative;
   width:100%;
   text-align: center;
+  transition: top 0.3s;
 /*  z-index: 99;*/
 }
 
@@ -151,8 +153,8 @@ nav ul li{
 /*here it styles the current tab*/
 .current-nav-tab a h6{
   text-decoration: none;
-  color: #FF467F;
-  border-bottom: 2px solid #FF467F;
+  color: #9313E9;
+  border-bottom: 2px solid #C57FE6;
 }
 
 /*here are the rest navs*/
@@ -164,8 +166,8 @@ nav ul li{
 }
 
 .other-nav-tab > a h6:hover{
-  color: #FF467F;
-  border-bottom: 2px solid #FF467F;
+  color: #9313E9;
+  border-bottom: 2px solid #C57FE6;
 }
 
 
@@ -288,16 +290,16 @@ main{
 }
 
 #name{
-  font-family: 'Merriweather', serif; font-size:28px; font-weight: 900; line-height: 44px;
+  font-family: 'Merriweather Sans', sans-serif; font-size:30px; font-weight: 900; line-height: 44px;
   display:block;
-  color: #8240A1;
+  color: #A000FB;
 }
 
 .section-description-right{
   display:flex;
   align-items: center;
   width:70%;
-  min-width:350px;
+  max-width:100%;
 }
 
 
@@ -305,7 +307,7 @@ main{
   display:flex;
   align-items: center;
   width:70%;
-  min-width: 350px;
+  max-width:100%;
 }
 
 /*project box*/
@@ -325,6 +327,7 @@ main{
   margin: 10px auto;
   color: black;
   width: 350px;
+  max-width:100%;
 }
 
 .project-box-overlay{
@@ -367,11 +370,12 @@ main{
 
 .project-box-left{
   width:100%;
+  max-width:100%;
 
 }
 .project-box-right{
   width:100%;
-
+  max-width:100%;
 
 
 }
@@ -424,9 +428,14 @@ main{
 
 .project-wide-img{
   display:block;
-  width: 100%;
   max-width: 100%;
 }
+
+#side-nav{
+    display: none;
+}
+
+
 
 /* Media queries -- tablet, side-padding: 0 5%*/
 @media only screen and (min-width : 800px)
@@ -498,6 +507,7 @@ main{
 
   .flex-column a img{
     width: 100%;
+    max-width: 100%;
     margin-bottom: 10px
   }
 
@@ -607,6 +617,8 @@ main{
 
   }
 
+
+
 }
 
 /* Media queries -- laptops */
@@ -633,6 +645,36 @@ main{
   .flex-box{
     text-align: left;
   }
+
+
+  /*side-nav*/
+    #side-nav{
+        display: block;
+        position: fixed;
+        top:30%;
+        left:20px;
+        background-color: rgba(255,255,255,0.5);
+    }
+
+    #side-nav nav a {
+        color: #F0EDF1;
+        display: block;
+        padding: 0px 10px;
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    #side-nav nav a h6{
+        line-height: 20px;
+        margin: 5px 0px;
+    }
+
+    #side-nav nav a:hover, #side-nav nav a.active {
+        border-left: 5px solid #C57FE6;
+        margin-left: 0px;
+        color: #494949;
+    }
+
 
 }
 
@@ -665,6 +707,9 @@ main{
   .roundbox{
     width: 70%;
   }
+
+
+
 
 }
 
@@ -733,6 +778,10 @@ main{
   background-color: #EFF4F6;
 }
 
+.bg-topbanner{
+  background-color: #F4F5FF;
+}
+
 .bg-grey-red{
   background-color: #CDABBE;
 }
@@ -757,8 +806,12 @@ main{
   background-color: #EBFEFB;
 }
 
+.bg-lightpurple{
+  background-color: #C57FE6;
+}
+
 .bg-darkbluepurple{
-  background-color: #401F94;
+  background-color: #9313E9;
 }
 
 .bg-blue-tint{
@@ -787,7 +840,10 @@ main{
 
 
 
+
+
 /*text color*/
+
 .text-white{
   color:white;
 }

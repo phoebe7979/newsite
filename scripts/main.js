@@ -1,12 +1,4 @@
-// When the user scrolls the page, execute myFunction//
-window.onscroll = function() {scrollbarFunction()};
 
-function scrollbarFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("bar").style.width = scrolled + "%";
-}
 
 
 
@@ -19,6 +11,7 @@ function navIconClick() {
         x.className = "topnav";
     }
 }
+
 
 
 
@@ -40,4 +33,51 @@ $(document).ready(function(){
       }).focus(); // focus on the content container
   });
 
+  /*side-nav*/
+
+    $('#side-nav').hide(); // inidially hide the side nav
+    var topOfMainContent = $('#1').offset().top;
+    $(window).scroll(function(){
+      if($(window).scrollTop() > topOfMainContent){
+        $('#side-nav').show();
+      } else {
+        $('#side-nav').hide();
+      }
+    });
+
+    $('#side-nav nav a').on('click', function(event) {
+        $(this).parent().find('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $(window).on('scroll', function() {
+        $('.aside-target').each(function() {
+            if($(window).scrollTop() >= $(this).offset().top) {
+                var id = $(this).attr('id');
+                $('#side-nav nav a').removeClass('active');
+                $('#side-nav nav a[href = "#'+ id +'"]').addClass('active');
+            }
+        });
+    });
+
+
 });
+
+// When the user scrolls the page, execute myFunction//
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {scrollbarFunction()};
+
+function scrollbarFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("bar").style.width = scrolled + "%";
+
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav-whole").style.top = "5px";
+  } else {
+    document.getElementById("nav-whole").style.top = "-77px";
+  }
+  prevScrollpos = currentScrollPos;
+}

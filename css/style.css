@@ -773,6 +773,11 @@ main{
 
 /*bg colors*/
 
+.bg-white-transparent{
+  background: rgba(255,255,255,0.8)
+}
+
+
 .bg-light-grey{
   background-color: #EFF4F6;
 }

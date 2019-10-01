@@ -52,7 +52,7 @@ $(document).ready(function(){
 
     $(window).on('scroll', function() {
         $('.aside-target').each(function() {
-            if($(window).scrollTop() >= $(this).offset().top) {
+            if($(window).scrollTop() >= $(this).offset().top - 80) {
                 var id = $(this).attr('id');
                 $('#side-nav nav a').removeClass('active');
                 $('#side-nav nav a[href = "#'+ id +'"]').addClass('active');
